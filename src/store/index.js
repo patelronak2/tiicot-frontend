@@ -34,7 +34,7 @@ export default new Vuex.Store({
   actions: {
     getAllStudents({ commit }) {
       // console.log("Getting All Students");
-      axios.get("http://localhost:5000/api/v1/students").then(response => {
+      axios.get("http://immense-dawn-46047.herokuapp.com/api/v1/students").then(response => {
         commit("SET_STUDENT", response.data.data);
       }).catch(error => {
         console.error(error);
